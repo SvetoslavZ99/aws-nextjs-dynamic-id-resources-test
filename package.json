@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "mkdir -p build && next build && cp package.json ./build && mv .next ./build && pwd",
-    "start": "next start -p 3002",
-    "lint": "next lint",
-    "deploy-cloud": "rm -r mta_archives; mbt build && cf deploy mta_archives/SLM-SYSTEM-NEWS-TS-UI_1.0.0.mtar"
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "react": "^18",
