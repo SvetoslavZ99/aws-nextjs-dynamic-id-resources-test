@@ -1,0 +1,25 @@
+{
+  "name": "dynamic-page-resources-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "mkdir -p build && next build && cp package.json ./build && mv .next ./build && pwd",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy-cloud": "rm -r mta_archives; mbt build && cf deploy mta_archives/SLM-SYSTEM-NEWS-TS-UI_1.0.0.mtar"
+  },
+  "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.1.4"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.4"
+  }
+}
